@@ -5,16 +5,15 @@ from .serializers import LeadSerializer
 # Lead Viewset
 
 
-class LeadViewSet(viewsets.ModelViewSet):
+class LeadViewSet(viewsets.ModelViewSet): 
 
-    seriealizer_class = LeadSerializer  
-    
+     
     permissions_classes = [
         permissions.IsAuthenticated
     ]
 
+    serializer_class = LeadSerializer
     
-
     def get_queryset(self):
         return self.request.user.leads.all()
 

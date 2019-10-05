@@ -12,6 +12,7 @@ import {CREATE_MESSAGE, GET_ERRORS} from './types';
  // RETURN ERRORS
 
  export const returnErrors = (msg,status) => {
+       console.log("RETURN ERRORS")
        return {
            type: GET_ERRORS,
            payload: {msg,status}

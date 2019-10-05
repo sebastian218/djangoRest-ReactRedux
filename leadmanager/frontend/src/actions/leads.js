@@ -29,7 +29,7 @@ export const deleteLead = (id) => dispatch => {
                 payload: id
             })
         })
-        .catch(err => console.log(err));
+        .catch(err => returnErrors(err.response.data, err.response.status));
 }
 
 //ADD LEAD
