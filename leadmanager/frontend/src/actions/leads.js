@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { createMessage , returnErrors} from './messages';
 import { GET_LEADS ,DELETE_LEAD , ADD_LEAD} from './types';
-
+import {tokenConfig} from './auth';
 
 
 // GET LEADS 
